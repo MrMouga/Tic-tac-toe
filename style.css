@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    border:0;
+    display:grid;
+    grid-template: 1fr 5fr / 1fr;
+    height:100%;
+    width:100%;
+
+    background-color:#024D63;
+    max-width:100vw;
+    height:100vh;
+    font-family:"DM Sans", sans-serif;
+ 
+}
+
+
+
+h1{
+    font-size:100px;
+    color:#024D63;
+    
+}
+
+h2{
+    font-size:40px;
+    color:white;
+    margin:0;
+}
+
+header{
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+main {
+    border:1px solid red;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    gap:2rem;
+
+} 
+
+.gameboard{
+    display:grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    width:350px;
+    height:350px;
+}
+
+/* .btn-play{
+    width:150px;
+    height:50px;
+    font-size:20px;
+    border-radius:10px;
+    border:none;
+}
+
+.btn-play:hover{
+    background-color:rgb(35, 136, 92);
+    color:#ffffff;
+} */
+
+
+
+.btn-play {
+  appearance: button;
+  background-color: #3fc99b;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  width:150px;
+  height:50px;
+  font-size:20px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn-play:after {
+  background-clip: padding-box;
+  background-color: #268a76;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn-play:main,
+.btn-play:focus {
+  user-select: auto;
+}
+
+.btn-play:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.btn-play:disabled {
+  cursor: auto;
+}
